@@ -1,16 +1,6 @@
 schemaVersion: 2.2.0
 metadata:
   name: default-devfile
-attributes:
-  .vscode/extensions.json: |
-    {
-      "recommendations": [
-        "redhat.java",
-        "continue.continue",
-        "redhat.vscode-yaml",
-        "redhat.vscode-quarkus"
-      ]
-    }
 components:
   - name: development-tooling
     container:
@@ -68,7 +58,7 @@ commands:
       workingDir: /home/user
       commandLine: |
         mkdir -p /home/user/.continue
-        cat > /home/user/.continue/config.yaml << 'EOF'
+        cat > /home/user/.continue/config.yaml << EOF
         name: Continue Config
         version: 0.0.1
         models:
