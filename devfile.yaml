@@ -89,9 +89,9 @@ commands:
         name: Continue Config
         version: 0.0.1
         models:
-          - name: LiteMaaS (qwen3-14b)
+          - name: LiteMaaS (Opus 4.6)
             provider: vllm
-            model: qwen3-14b
+            model: claude-opus-4-6
             apiKey: ${LLM_API_KEY}
             apiBase: ${LLM_BASE_URL}
             roles:
